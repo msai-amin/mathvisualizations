@@ -35,6 +35,8 @@ manim -pql metric_projection.py MetricProjection
 manim -pql information_geometry.py InformationGeometry
 manim -pql statistical_manifolds.py StatisticalManifolds
 manim -pql ml_information_geometry.py MLInformationGeometry
+manim -pql fisher_metric_visualization.py FisherMetricVisualization
+manim -pql fisher_metric_detailed.py FisherMetricDetailed
 ```
 
 ## Features
@@ -66,6 +68,8 @@ manim -pql ml_information_geometry.py MLInformationGeometry
 - **Dual Coordinates**: Legendre transformation between parameter spaces
 - **Machine Learning Applications**: Natural gradient descent and optimization
 - **Kullback-Leibler Divergence**: Information-theoretic distance measures
+- **Fisher Metric Visualization**: Shows how Fisher metric measures distances between probability distributions
+- **Detailed Fisher Analysis**: Probability density functions and metric evolution along geodesic paths
 
 ## Mathematical Concepts
 
