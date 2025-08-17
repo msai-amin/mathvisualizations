@@ -1,0 +1,11 @@
+# This file is used internally by FFMPEG.
+file 'file:/Users/aminamouhadi/MathVisualizations/media/videos/simple_scene/480p15/partial_movie_files/SimpleAffineCurves/1185818338_549567820_223132457.mp4'
+file 'file:/Users/aminamouhadi/MathVisualizations/media/videos/simple_scene/480p15/partial_movie_files/SimpleAffineCurves/624642324_3022832082_1627821088.mp4'
+file 'file:/Users/aminamouhadi/MathVisualizations/media/videos/simple_scene/480p15/partial_movie_files/SimpleAffineCurves/624642324_3394500337_985322425.mp4'
+file 'file:/Users/aminamouhadi/MathVisualizations/media/videos/simple_scene/480p15/partial_movie_files/SimpleAffineCurves/624642324_2866522143_2484897277.mp4'
+file 'file:/Users/aminamouhadi/MathVisualizations/media/videos/simple_scene/480p15/partial_movie_files/SimpleAffineCurves/624642324_4217992463_1149315432.mp4'
+file 'file:/Users/aminamouhadi/MathVisualizations/media/videos/simple_scene/480p15/partial_movie_files/SimpleAffineCurves/624642324_4143311738_2863293907.mp4'
+file 'file:/Users/aminamouhadi/MathVisualizations/media/videos/simple_scene/480p15/partial_movie_files/SimpleAffineCurves/624642324_4217992463_724987835.mp4'
+file 'file:/Users/aminamouhadi/MathVisualizations/media/videos/simple_scene/480p15/partial_movie_files/SimpleAffineCurves/624642324_3689826312_1993752896.mp4'
+file 'file:/Users/aminamouhadi/MathVisualizations/media/videos/simple_scene/480p15/partial_movie_files/SimpleAffineCurves/624642324_16829367_3283054138.mp4'
+file 'file:/Users/aminamouhadi/MathVisualizations/media/videos/simple_scene/480p15/partial_movie_files/SimpleAffineCurves/624642324_2844360058_3035558173.mp4'
