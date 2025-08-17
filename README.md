@@ -1,6 +1,6 @@
 # Math Visualizations
 
-A project for creating mathematical visualizations using Manim, featuring affine curves and non-Euclidean manifolds with projections.
+A project for creating mathematical visualizations using Manim, featuring affine curves, non-Euclidean manifolds, and information geometry.
 
 ## Setup
 
@@ -30,6 +30,13 @@ manim -pql manifold_projection.py ManifoldProjection
 manim -pql metric_projection.py MetricProjection
 ```
 
+### Information Geometry
+```bash
+manim -pql information_geometry.py InformationGeometry
+manim -pql statistical_manifolds.py StatisticalManifolds
+manim -pql ml_information_geometry.py MLInformationGeometry
+```
+
 ## Features
 
 ### Affine Curves
@@ -52,6 +59,14 @@ manim -pql metric_projection.py MetricProjection
 - **Geodesic Projection**: How shortest paths change under projection
 - **Coordinate Grid Distortion**: Visual representation of metric changes
 
+### Information Geometry
+- **Statistical Manifolds**: Space of probability distributions with Fisher metric
+- **Exponential Families**: Natural and expectation parameter spaces
+- **Fisher Information Metric**: g_ij = E[∂ᵢlog p ∂ⱼlog p]
+- **Dual Coordinates**: Legendre transformation between parameter spaces
+- **Machine Learning Applications**: Natural gradient descent and optimization
+- **Kullback-Leibler Divergence**: Information-theoretic distance measures
+
 ## Mathematical Concepts
 
 - **Affine Transformations**: Curves that preserve geometric properties under linear transformations
@@ -62,6 +77,19 @@ manim -pql metric_projection.py MetricProjection
 - **Metric Tensor**: Mathematical object that defines distances and angles
 - **Coordinate Projections**: How curved geometry appears in flat coordinates
 - **Metric Distortion**: The effect of curvature on geometric measurements
+- **Statistical Manifolds**: Spaces where points represent probability distributions
+- **Fisher Information**: Metric that measures the information content of parameters
+- **Natural Gradient**: Optimization method that respects the geometry of probability space
+- **Exponential Families**: Important class of probability distributions with special geometric properties
+
+## Applications
+
+- **Machine Learning**: Natural gradient descent, optimization on statistical manifolds
+- **Statistics**: Maximum likelihood estimation, Bayesian inference
+- **Physics**: Thermodynamics, quantum mechanics, general relativity
+- **Neuroscience**: Neural coding and information processing
+- **Information Theory**: Data compression, communication theory
+- **Differential Geometry**: Modern geometric analysis and topology
 
 ## Requirements
 
@@ -77,3 +105,4 @@ All visualizations generate high-quality MP4 videos in the `media/videos/` direc
 - Research visualization
 - Interactive demonstrations
 - Understanding differential geometry concepts
+- Learning information geometry and statistical inference
