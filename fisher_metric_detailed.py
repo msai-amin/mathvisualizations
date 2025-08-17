@@ -28,8 +28,8 @@ class FisherMetricDetailed(Scene):
         right_axes.move_to(RIGHT * 3)
         
         # Add labels
-        left_label = Text("Parameter Space\n(μ, σ)", font_size=18, color=RED).next_to(left_axes, DOWN)
-        right_label = Text("Probability Density\np(x|μ,σ)", font_size=18, color=GREEN).next_to(right_axes, DOWN)
+        left_label = Text("Parameter Space\n(μ, σ)", font_size=20, color=RED).next_to(left_axes, DOWN)
+        right_label = Text("Probability Density\np(x|μ,σ)", font_size=20, color=GREEN).next_to(right_axes, DOWN)
         
         # Create coordinate grid
         param_grid = VGroup()
@@ -77,11 +77,11 @@ class FisherMetricDetailed(Scene):
         dist2_dot = Dot(point=dist2_point, color=BLUE, radius=0.1)
         
         # Add labels for the distributions
-        dist1_label = Text("P₁(μ₁=-1, σ₁=0.4)", font_size=12, color=RED)
-        dist1_label.move_to(dist1_point + UP * 0.3)
+        dist1_label = Text("P₁(μ₁=-1, σ₁=0.4)", font_size=16, color=RED)
+        dist1_label.move_to(dist1_point + UP * 0.4)
         
-        dist2_label = Text("P₂(μ₂=1, σ₂=0.8)", font_size=12, color=BLUE)
-        dist2_label.move_to(dist2_point + UP * 0.3)
+        dist2_label = Text("P₂(μ₂=1, σ₂=0.8)", font_size=16, color=BLUE)
+        dist2_label.move_to(dist2_point + UP * 0.4)
         
         # Show the two distributions
         self.play(FadeIn(dist1_dot), FadeIn(dist2_dot))
@@ -106,17 +106,17 @@ class FisherMetricDetailed(Scene):
         # Display Fisher metrics
         metric1_text = MathTex(
             f"G_1 = \\begin{{pmatrix}} {G1[0,0]:.2f} & {G1[0,1]:.2f} \\\\ {G1[1,0]:.2f} & {G1[1,1]:.2f} \\end{{pmatrix}}",
-            font_size=10,
+            font_size=12,
             color=RED
         )
-        metric1_text.move_to(dist1_point + DOWN * 0.4)
+        metric1_text.move_to(dist1_point + DOWN * 0.5)
         
         metric2_text = MathTex(
             f"G_2 = \\begin{{pmatrix}} {G2[0,0]:.2f} & {G2[0,1]:.2f} \\\\ {G2[1,0]:.2f} & {G2[1,1]:.2f} \\end{{pmatrix}}",
-            font_size=10,
+            font_size=12,
             color=BLUE
         )
-        metric2_text.move_to(dist2_point + DOWN * 0.4)
+        metric2_text.move_to(dist2_point + DOWN * 0.5)
         
         self.play(Write(metric1_text), Write(metric2_text))
         self.wait(2)
@@ -211,11 +211,11 @@ class FisherMetricDetailed(Scene):
         
         # Show distance calculation
         distance_text = VGroup(
-            Text("Fisher Distance Calculation:", font_size=20, color=WHITE),
-            Text(f"ds² = δθ^T G(θ) δθ", font_size=16, color=YELLOW),
-            Text(f"Total distance: {total_distance:.3f}", font_size=16, color=ORANGE),
-            Text("This measures information difference between distributions", font_size=14, color=BLUE)
-        ).arrange(DOWN, buff=0.2).to_edge(DOWN)
+            Text("Fisher Distance Calculation:", font_size=24, color=WHITE),
+            Text(f"ds² = δθ^T G(θ) δθ", font_size=20, color=YELLOW),
+            Text(f"Total distance: {total_distance:.3f}", font_size=20, color=ORANGE),
+            Text("This measures information difference between distributions", font_size=18, color=BLUE)
+        ).arrange(DOWN, buff=0.3).to_edge(DOWN)
         
         self.play(Write(distance_text))
         self.wait(2)
@@ -230,13 +230,13 @@ class FisherMetricDetailed(Scene):
             
             metric_text = MathTex(
                 f"G = \\begin{{pmatrix}} {G[0,0]:.2f} & {G[0,1]:.2f} \\\\ {G[1,0]:.2f} & {G[1,1]:.2f} \\end{{pmatrix}}",
-                font_size=8,
+                font_size=10,
                 color=YELLOW
             )
             
             # Position along the path
             path_pos = left_axes.c2p(point[0], point[1], 0)
-            metric_text.move_to(path_pos + RIGHT * 0.6)
+            metric_text.move_to(path_pos + RIGHT * 0.7)
             metric_evolution.add(metric_text)
         
         self.play(*[Write(metric) for metric in metric_evolution])
@@ -254,12 +254,12 @@ class FisherMetricDetailed(Scene):
         
         # Show the statistical interpretation
         interpretation_text = VGroup(
-            Text("Key Insights:", font_size=20, color=WHITE),
-            Text("• Fisher metric G(θ) varies with parameters", font_size=16, color=BLUE),
-            Text("• Higher σ → Lower metric values (less information)", font_size=16, color=GREEN),
-            Text("• Distance measures information loss between distributions", font_size=16, color=YELLOW),
-            Text("• Geodesic path respects the geometry of probability space", font_size=16, color=ORANGE)
-        ).arrange(DOWN, buff=0.2).to_edge(DOWN)
+            Text("Key Insights:", font_size=24, color=WHITE),
+            Text("• Fisher metric G(θ) varies with parameters", font_size=18, color=BLUE),
+            Text("• Higher σ → Lower metric values (less information)", font_size=18, color=GREEN),
+            Text("• Distance measures information loss between distributions", font_size=18, color=YELLOW),
+            Text("• Geodesic path respects the geometry of probability space", font_size=18, color=ORANGE)
+        ).arrange(DOWN, buff=0.3).to_edge(DOWN)
         
         self.play(FadeOut(distance_text))
         self.play(Write(interpretation_text))
@@ -267,10 +267,10 @@ class FisherMetricDetailed(Scene):
         
         # Final explanation
         final_text = VGroup(
-            Text("The Fisher metric reveals the intrinsic geometry", font_size=20, color=YELLOW),
-            Text("of probability distributions, where distances", font_size=20, color=YELLOW),
-            Text("measure information-theoretic differences", font_size=18, color=BLUE)
-        ).arrange(DOWN, buff=0.3).to_edge(DOWN)
+            Text("The Fisher metric reveals the intrinsic geometry", font_size=24, color=YELLOW),
+            Text("of probability distributions, where distances", font_size=24, color=YELLOW),
+            Text("measure information-theoretic differences", font_size=20, color=BLUE)
+        ).arrange(DOWN, buff=0.4).to_edge(DOWN)
         
         self.play(FadeOut(interpretation_text))
         self.play(Write(final_text))
