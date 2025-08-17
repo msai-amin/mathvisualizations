@@ -1,6 +1,6 @@
 # Math Visualizations
 
-A project for creating mathematical visualizations using Manim, featuring affine curves and non-Euclidean manifolds.
+A project for creating mathematical visualizations using Manim, featuring affine curves and non-Euclidean manifolds with projections.
 
 ## Setup
 
@@ -24,6 +24,12 @@ manim -pql manifold_scene.py NonEuclideanManifold
 manim -pql torus_manifold.py TorusManifold
 ```
 
+### Manifold Projections in Euclidean Space
+```bash
+manim -pql manifold_projection.py ManifoldProjection
+manim -pql metric_projection.py MetricProjection
+```
+
 ## Features
 
 ### Affine Curves
@@ -39,6 +45,13 @@ manim -pql torus_manifold.py TorusManifold
 - Geodesic curves and coordinate grids
 - Tangent vectors and parallel transport visualization
 
+### Manifold Projections
+- **3D to 2D Projection**: Shows how curved manifolds appear when flattened
+- **Metric Tensor Projection**: Demonstrates metric distortion under coordinate changes
+- **Side-by-side Comparison**: Curved vs. flat coordinate systems
+- **Geodesic Projection**: How shortest paths change under projection
+- **Coordinate Grid Distortion**: Visual representation of metric changes
+
 ## Mathematical Concepts
 
 - **Affine Transformations**: Curves that preserve geometric properties under linear transformations
@@ -46,6 +59,9 @@ manim -pql torus_manifold.py TorusManifold
 - **Manifolds**: Curved surfaces with intrinsic geometry
 - **Geodesics**: Shortest paths on curved surfaces
 - **Parallel Transport**: How vectors change when moved along curved paths
+- **Metric Tensor**: Mathematical object that defines distances and angles
+- **Coordinate Projections**: How curved geometry appears in flat coordinates
+- **Metric Distortion**: The effect of curvature on geometric measurements
 
 ## Requirements
 
@@ -60,3 +76,4 @@ All visualizations generate high-quality MP4 videos in the `media/videos/` direc
 - Educational content
 - Research visualization
 - Interactive demonstrations
+- Understanding differential geometry concepts
