@@ -22,12 +22,9 @@ manim -pql advanced_scene.py AdvancedAffineCurves
 manim -pql non_euclidean_2d.py NonEuclidean2D
 manim -pql manifold_scene.py NonEuclideanManifold
 manim -pql torus_manifold.py TorusManifold
-```
-
-### Manifold Projections in Euclidean Space
-```bash
 manim -pql manifold_projection.py ManifoldProjection
 manim -pql metric_projection.py MetricProjection
+manim -pql cauchy_sequences_topology.py CauchySequencesTopology
 ```
 
 ### Information Geometry
@@ -58,11 +55,12 @@ manim -pql affine_connection_3d.py AffineConnection3D
 - Mathematical labels and equations
 
 ### Non-Euclidean Manifolds
-- **2D Non-Euclidean Geometry**: Demonstrates curved space concepts
-- **3D Hyperbolic Paraboloid**: Shows manifold embedded in 3D space
-- **Torus Manifold**: Demonstrates intrinsic curvature and parallel transport
-- Geodesic curves and coordinate grids
-- Tangent vectors and parallel transport visualization
+- **2D Non-Euclidean Geometry**: Curved coordinate systems and geodesic deviation
+- **3D Manifold Surfaces**: Hyperbolic paraboloids and curved spaces
+- **Torus Manifold**: Parallel transport and geodesic paths on curved surfaces
+- **Manifold Projections**: Mapping curved spaces to Euclidean coordinates
+- **Metric Projections**: How metric tensors change under coordinate transformations
+- **Cauchy Sequences in Non-Point Based Topology**: Convergence in abstract topological spaces
 
 ### Manifold Projections
 - **3D to 2D Projection**: Shows how curved manifolds appear when flattened
