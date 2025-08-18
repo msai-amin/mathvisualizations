@@ -37,6 +37,7 @@ manim -pql statistical_manifolds.py StatisticalManifolds
 manim -pql ml_information_geometry.py MLInformationGeometry
 manim -pql fisher_metric_visualization.py FisherMetricVisualization
 manim -pql fisher_metric_detailed.py FisherMetricDetailed
+manim -pql statistical_manifold_charts_atlas.py StatisticalManifoldChartsAtlas
 ```
 
 ### Smooth Manifolds & Differential Geometry
@@ -79,6 +80,7 @@ manim -pql affine_connection_3d.py AffineConnection3D
 - **Kullback-Leibler Divergence**: Information-theoretic distance measures
 - **Fisher Metric Visualization**: Shows how Fisher metric measures distances between probability distributions
 - **Detailed Fisher Analysis**: Probability density functions and metric evolution along geodesic paths
+- **Charts & Atlas on Statistical Manifolds**: Local coordinate systems covering probability distribution families
 
 ### Smooth Manifolds & Differential Geometry
 - **Charts & Atlas**: Local coordinate systems covering the manifold
