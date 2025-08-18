@@ -39,6 +39,13 @@ manim -pql fisher_metric_visualization.py FisherMetricVisualization
 manim -pql fisher_metric_detailed.py FisherMetricDetailed
 ```
 
+### Smooth Manifolds & Differential Geometry
+```bash
+manim -pql manifold_charts_atlas.py ManifoldChartsAtlas
+manim -pql metric_tensor_visualization.py MetricTensorVisualization
+manim -pql affine_connection_visualization.py AffineConnectionVisualization
+```
+
 ## Features
 
 ### Affine Curves
@@ -71,6 +78,14 @@ manim -pql fisher_metric_detailed.py FisherMetricDetailed
 - **Fisher Metric Visualization**: Shows how Fisher metric measures distances between probability distributions
 - **Detailed Fisher Analysis**: Probability density functions and metric evolution along geodesic paths
 
+### Smooth Manifolds & Differential Geometry
+- **Charts & Atlas**: Local coordinate systems covering the manifold
+- **Chart Transformations**: Smooth transitions between coordinate systems
+- **Metric Tensor g**: Defines distances, angles, and volumes on the manifold
+- **Affine Connection ∇**: Determines parallel transport and geodesics
+- **Tangent Spaces**: Local linearization of the manifold
+- **Geodesic Equations**: Paths that minimize distance with respect to the metric
+
 ## Mathematical Concepts
 
 - **Affine Transformations**: Curves that preserve geometric properties under linear transformations
@@ -85,6 +100,12 @@ manim -pql fisher_metric_detailed.py FisherMetricDetailed
 - **Fisher Information**: Metric that measures the information content of parameters
 - **Natural Gradient**: Optimization method that respects the geometry of probability space
 - **Exponential Families**: Important class of probability distributions with special geometric properties
+- **Smooth Manifolds**: Topological spaces locally resembling Euclidean space
+- **Charts & Atlas**: Collections of coordinate systems covering the manifold
+- **Metric Tensor**: Mathematical object defining distances, angles, and volumes
+- **Affine Connection**: Structure defining parallel transport and geodesics
+- **Christoffel Symbols**: Connection coefficients in local coordinates
+- **Parallel Transport**: Process of moving vectors along curves while maintaining parallelism
 
 ## Applications
 
