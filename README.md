@@ -44,6 +44,8 @@ manim -pql fisher_metric_detailed.py FisherMetricDetailed
 manim -pql manifold_charts_atlas.py ManifoldChartsAtlas
 manim -pql metric_tensor_visualization.py MetricTensorVisualization
 manim -pql affine_connection_visualization.py AffineConnectionVisualization
+manim -pql metric_tensor_3d.py MetricTensor3D
+manim -pql affine_connection_3d.py AffineConnection3D
 ```
 
 ## Features
@@ -85,6 +87,8 @@ manim -pql affine_connection_visualization.py AffineConnectionVisualization
 - **Affine Connection ∇**: Determines parallel transport and geodesics
 - **Tangent Spaces**: Local linearization of the manifold
 - **Geodesic Equations**: Paths that minimize distance with respect to the metric
+- **3D Metric Tensor**: Enhanced visualization showing metric on curved 3D surfaces
+- **3D Affine Connection**: Advanced visualization of parallel transport and connection coefficients in 3D
 
 ## Mathematical Concepts
 
