@@ -35,7 +35,7 @@ manim -pql statistical_manifolds.py StatisticalManifolds
 manim -pql ml_information_geometry.py MLInformationGeometry
 manim -pql fisher_metric_visualization.py FisherMetricVisualization
 manim -pql fisher_metric_detailed.py FisherMetricDetailed
-manim -pql statistical_manifold_charts_atlas.py StatisticalManifoldChartsAtlas
+manim -pql fisher_information_manifold.py FisherInformationManifold
 ```
 
 ### Smooth Manifolds & Differential Geometry
@@ -72,15 +72,12 @@ manim -pql affine_connection_3d.py AffineConnection3D
 - **Coordinate Grid Distortion**: Visual representation of metric changes
 
 ### Information Geometry
-- **Statistical Manifolds**: Space of probability distributions with Fisher metric
-- **Exponential Families**: Natural and expectation parameter spaces
-- **Fisher Information Metric**: g_ij = E[∂ᵢlog p ∂ⱼlog p]
-- **Dual Coordinates**: Legendre transformation between parameter spaces
-- **Machine Learning Applications**: Natural gradient descent and optimization
-- **Kullback-Leibler Divergence**: Information-theoretic distance measures
-- **Fisher Metric Visualization**: Shows how Fisher metric measures distances between probability distributions
-- **Detailed Fisher Analysis**: Probability density functions and metric evolution along geodesic paths
-- **Charts & Atlas on Statistical Manifolds**: Local coordinate systems covering probability distribution families
+- **Basic Concepts**: Parameter space, probability space, Fisher metric
+- **Statistical Manifolds**: Exponential families, natural and expectation parameters
+- **Machine Learning Applications**: Natural gradient descent, optimization
+- **Fisher Metric Visualization**: Distance between probability distributions
+- **Detailed Fisher Analysis**: Probability density functions and metric evolution
+- **Fisher Information Matrix on Statistical Manifold**: How probability distributions shape the manifold and determine distances
 
 ### Smooth Manifolds & Differential Geometry
 - **Charts & Atlas**: Local coordinate systems covering the manifold
