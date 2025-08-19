@@ -25,6 +25,7 @@ manim -pql torus_manifold.py TorusManifold
 manim -pql manifold_projection.py ManifoldProjection
 manim -pql metric_projection.py MetricProjection
 manim -pql cauchy_sequences_topology.py CauchySequencesTopology
+manim -pql parametric_space_visualization.py ParametricSpaceVisualization
 ```
 
 ### Information Geometry
@@ -61,6 +62,7 @@ manim -pql affine_connection_3d.py AffineConnection3D
 - **Manifold Projections**: Mapping curved spaces to Euclidean coordinates
 - **Metric Projections**: How metric tensors change under coordinate transformations
 - **Cauchy Sequences in Non-Point Based Topology**: Convergence in abstract topological spaces
+- **Parametric Space Visualization**: Exploring spaces defined by parameters and their evolution
 
 ### Manifold Projections
 - **3D to 2D Projection**: Shows how curved manifolds appear when flattened
