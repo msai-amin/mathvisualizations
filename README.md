@@ -37,6 +37,7 @@ manim -pql ml_information_geometry.py MLInformationGeometry
 manim -pql fisher_metric_visualization.py FisherMetricVisualization
 manim -pql fisher_metric_detailed.py FisherMetricDetailed
 manim -pql fisher_information_manifold.py FisherInformationManifold
+manim -pql normal_distribution_manifold.py NormalDistributionManifold
 ```
 
 ### Smooth Manifolds & Differential Geometry
@@ -80,6 +81,7 @@ manim -pql affine_connection_3d.py AffineConnection3D
 - **Fisher Metric Visualization**: Distance between probability distributions
 - **Detailed Fisher Analysis**: Probability density functions and metric evolution
 - **Fisher Information Matrix on Statistical Manifold**: How probability distributions shape the manifold and determine distances
+- **Normal Distribution Manifold**: Statistical manifold comprising of normal distributions with parameters (μ, σ²)
 
 ### Smooth Manifolds & Differential Geometry
 - **Charts & Atlas**: Local coordinate systems covering the manifold
