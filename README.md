@@ -13,8 +13,9 @@ pip install -r requirements.txt
 
 ### Affine Curves
 ```bash
-manim -pql simple_scene.py SimpleAffineCurves
+manim -pql simple_scene.py AffineCurves
 manim -pql advanced_scene.py AdvancedAffineCurves
+manim -pql coordinate_system_2d.py CoordinateSystem2D
 ```
 
 ### Non-Euclidean Manifolds
@@ -50,8 +51,9 @@ manim -pql affine_connection_3d.py AffineConnection3D
 ## Features
 
 ### Affine Curves
-- **Simple Scene**: Parabola (y = x²) and Ellipse (x²/4 + y² = 1)
-- **Advanced Scene**: Parabola, Ellipse, Hyperbola (x² - y² = 1), and Circle (x² + y² = 2)
+- **Simple Affine Curves**: Parabola and ellipse with basic visualization
+- **Advanced Affine Curves**: Parabola, ellipse, hyperbola, and circle
+- **2D Coordinate System**: Coordinate grid with line between two points, distance calculation, slope, and line equation
 - Interactive animations with moving points along curves
 - Mathematical labels and equations
 
