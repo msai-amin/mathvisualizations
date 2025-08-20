@@ -4,8 +4,8 @@ from scipy.stats import norm, gamma, beta
 
 class FisherInformationManifold(ThreeDScene):
     def construct(self):
-        # Set up the scene
-        self.set_camera_orientation(phi=75 * DEGREES, theta=45 * DEGREES)
+        # Set up the scene with better initial camera angle
+        self.set_camera_orientation(phi=60 * DEGREES, theta=30 * DEGREES)
         
         title = Text("Fisher Information Matrix on Statistical Manifold", font_size=28, color=WHITE).to_edge(UP)
         subtitle = Text("How Probability Distributions Shape the Manifold", font_size=18, color=BLUE).next_to(title, DOWN)
@@ -53,6 +53,18 @@ class FisherInformationManifold(ThreeDScene):
         self.play(Create(surface))
         self.wait(1)
         
+        # Add camera movement to show different perspectives
+        self.move_camera(phi=75 * DEGREES, theta=45 * DEGREES, run_time=3)
+        self.wait(1)
+        
+        # Move camera to show the surface from another angle
+        self.move_camera(phi=45 * DEGREES, theta=60 * DEGREES, run_time=3)
+        self.wait(1)
+        
+        # Return to a good viewing angle
+        self.move_camera(phi=65 * DEGREES, theta=35 * DEGREES, run_time=2)
+        self.wait(1)
+        
         # Add surface label
         surface_label = Text("Statistical Manifold: N(μ, σ²)", font_size=16, color=WHITE)
         surface_label.move_to(axes.c2p(0, 0, 2.5))
@@ -87,6 +99,10 @@ class FisherInformationManifold(ThreeDScene):
         for dot, label in zip(sample_dots, sample_labels):
             self.play(FadeIn(dot), Write(label), run_time=0.5)
         
+        self.wait(1)
+        
+        # Move camera to better see the sample points
+        self.move_camera(phi=70 * DEGREES, theta=40 * DEGREES, run_time=2)
         self.wait(1)
         
         # Show probability density functions for each sample point
@@ -149,6 +165,10 @@ class FisherInformationManifold(ThreeDScene):
         self.play(Create(path1), Create(path2))
         self.wait(1)
         
+        # Move camera to better see the paths
+        self.move_camera(phi=60 * DEGREES, theta=50 * DEGREES, run_time=2)
+        self.wait(1)
+        
         # Add path labels
         path1_label = Text("Constant μ path", font_size=12, color=RED)
         path1_label.move_to(axes.c2p(-1, 1.25, 1.5))
@@ -185,6 +205,10 @@ class FisherInformationManifold(ThreeDScene):
         self.play(Write(curvature_explanation))
         self.wait(2)
         
+        # Move camera to show the curvature effect
+        self.move_camera(phi=80 * DEGREES, theta=25 * DEGREES, run_time=3)
+        self.wait(1)
+        
         # Show moving point that demonstrates the metric
         moving_point = Dot(color=YELLOW, radius=0.08)
         
@@ -207,10 +231,18 @@ class FisherInformationManifold(ThreeDScene):
         self.play(Create(metric_path))
         self.wait(1)
         
+        # Move camera to follow the moving point
+        self.move_camera(phi=70 * DEGREES, theta=35 * DEGREES, run_time=2)
+        self.wait(1)
+        
         # Animate the moving point
         moving_point.move_to(metric_path_points[0])
         self.play(FadeIn(moving_point))
         self.play(MoveAlongPath(moving_point, metric_path, run_time=4))
+        self.wait(1)
+        
+        # Final camera movement to show overall structure
+        self.move_camera(phi=55 * DEGREES, theta=45 * DEGREES, run_time=3)
         self.wait(1)
         
         # Show final explanation of Fisher Information
