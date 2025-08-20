@@ -53,17 +53,17 @@ class FisherInformationManifold(ThreeDScene):
         self.play(Create(surface))
         self.wait(1)
         
-        # Add camera movement to show different perspectives
-        self.move_camera(phi=75 * DEGREES, theta=45 * DEGREES, run_time=3)
-        self.wait(1)
+        # Set camera to different angles to show the surface clearly
+        self.set_camera_orientation(phi=75 * DEGREES, theta=45 * DEGREES)
+        self.wait(2)
         
         # Move camera to show the surface from another angle
-        self.move_camera(phi=45 * DEGREES, theta=60 * DEGREES, run_time=3)
-        self.wait(1)
+        self.set_camera_orientation(phi=45 * DEGREES, theta=60 * DEGREES)
+        self.wait(2)
         
         # Return to a good viewing angle
-        self.move_camera(phi=65 * DEGREES, theta=35 * DEGREES, run_time=2)
-        self.wait(1)
+        self.set_camera_orientation(phi=65 * DEGREES, theta=35 * DEGREES)
+        self.wait(2)
         
         # Add surface label
         surface_label = Text("Statistical Manifold: N(μ, σ²)", font_size=16, color=WHITE)
@@ -102,7 +102,7 @@ class FisherInformationManifold(ThreeDScene):
         self.wait(1)
         
         # Move camera to better see the sample points
-        self.move_camera(phi=70 * DEGREES, theta=40 * DEGREES, run_time=2)
+        self.set_camera_orientation(phi=70 * DEGREES, theta=40 * DEGREES)
         self.wait(1)
         
         # Show probability density functions for each sample point
@@ -166,7 +166,7 @@ class FisherInformationManifold(ThreeDScene):
         self.wait(1)
         
         # Move camera to better see the paths
-        self.move_camera(phi=60 * DEGREES, theta=50 * DEGREES, run_time=2)
+        self.set_camera_orientation(phi=60 * DEGREES, theta=50 * DEGREES)
         self.wait(1)
         
         # Add path labels
@@ -206,7 +206,7 @@ class FisherInformationManifold(ThreeDScene):
         self.wait(2)
         
         # Move camera to show the curvature effect
-        self.move_camera(phi=80 * DEGREES, theta=25 * DEGREES, run_time=3)
+        self.set_camera_orientation(phi=80 * DEGREES, theta=25 * DEGREES)
         self.wait(1)
         
         # Show moving point that demonstrates the metric
@@ -232,7 +232,7 @@ class FisherInformationManifold(ThreeDScene):
         self.wait(1)
         
         # Move camera to follow the moving point
-        self.move_camera(phi=70 * DEGREES, theta=35 * DEGREES, run_time=2)
+        self.set_camera_orientation(phi=70 * DEGREES, theta=35 * DEGREES)
         self.wait(1)
         
         # Animate the moving point
@@ -242,7 +242,7 @@ class FisherInformationManifold(ThreeDScene):
         self.wait(1)
         
         # Final camera movement to show overall structure
-        self.move_camera(phi=55 * DEGREES, theta=45 * DEGREES, run_time=3)
+        self.set_camera_orientation(phi=55 * DEGREES, theta=45 * DEGREES)
         self.wait(1)
         
         # Show final explanation of Fisher Information
